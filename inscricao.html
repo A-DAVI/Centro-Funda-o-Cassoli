@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscrição | Centro Comunitário de Capacitação</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <img src="img/logo_jandaia.jpg" alt="Centro Comunitário Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="inscricao.html" class="active">Inscrição</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pagina-inscricao">
+    <section class="titulo-pagina">
+      <h1>Formulário de Inscrição</h1>
+      <p>Preencha o formulário abaixo para se inscrever em um de nossos cursos.</p>
+    </section>
+
+    <form class="formulario-inscricao">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+
+      <label for="curso">Curso de interesse</label>
+      <select id="curso" name="curso" required>
+        <option value="">Selecione um curso</option>
+        <option value="informatica">Informática Básica</option>
+        <option value="profissional">Capacitação Profissional</option>
+        <option value="idosos">Inclusão Digital para Idosos</option>
+        <option value="empregabilidade">Workshop de Empregabilidade</option>
+      </select>
+
+      <label for="mensagem">Mensagem (opcional)</label>
+      <textarea id="mensagem" name="mensagem" rows="4"
+        placeholder="Deixe aqui suas dúvidas ou observações..."></textarea>
+
+      <button type="submit" class="button">Enviar Inscrição</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Centro Comunitário de Capacitação - Jandaia do Sul</p>
+  </footer>
+</body>
+
+</html>
